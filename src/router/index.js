@@ -7,11 +7,11 @@ import Project from '../views/Project.vue';
 import Contact from '../views/Contact.vue';
 
 const routes = [
-  { path: '/', component: Home, name: 'home' },
-  { path: '/services', component: Services, name: 'services' },
-  { path: '/resume', component: Resume, name: 'resume' },
-  { path: '/project', component: Project, name: 'project' },
-  { path: '/contact', component: Contact, name: 'contact' },
+  { path: import.meta.env.VITE_API_BASE_URL || '/Personal-Portfolio' + '/', component: Home, name: 'home' },
+  { path: import.meta.env.VITE_API_BASE_URL || '/Personal-Portfolio' + '/services', component: Services, name: 'services' },
+  { path: import.meta.env.VITE_API_BASE_URL || '/Personal-Portfolio' + '/resume', component: Resume, name: 'resume' },
+  { path: import.meta.env.VITE_API_BASE_URL || '/Personal-Portfolio' + '/project', component: Project, name: 'project' },
+  { path: import.meta.env.VITE_API_BASE_URL || '/Personal-Portfolio' + '/contact', component: Contact, name: 'contact' },
 ];
 
 const router = createRouter({
