@@ -6,7 +6,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/personal-portfolio/",
+  base: "/Personal-Portfolio/",
   css: {
     postcss: {
       plugins: [tailwind(), autoprefixer()],
